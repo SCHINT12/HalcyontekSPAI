@@ -93,16 +93,14 @@ public class orderFlowSteps  {
 	@When("I click Mixed Livers protuct")
 	public void i_click_mixed_livers_products()
 	{
-		obj_dummypage.formproductNameXpathWithText1();
+		obj_dummypage.selectProductMixedLiversCombo();
 	}
 	
 	
-	
-	@When("I click the product Mixed Livers combo")
-	public void i_click_the_product_mixed_livers_combo() throws InterruptedException {
-		Thread.sleep(5000);
-		WebElement MixedLiversCombo=driver.findElement(By.xpath("(//*[contains(text(),'Mixed Livers')]/following::div[@class='card-footer'][1]/div[2])[1]"));
-		MixedLiversCombo.click();
+	@When("I click Mixed Livers Dinner protuct")
+	public void i_click_mixed_livers_dinner_protuct()
+	{
+		obj_dummypage.selectProductMixedLiversDinner();
 	}
 	
 	
@@ -132,8 +130,12 @@ public class orderFlowSteps  {
 			}
 			else if(Section.equals("Drink Choice") || Section.equals("Side Choice"))
 			{
-				str="//*[text()='"+s+"']/following-sibling::span";
+				str="//*[text()='"+s+"']/following-sibling::span";	
 
+			}
+			else if (Section.equals("Side Choices (Pick 2)"))
+			{
+				str="//*[text()='"+s+"']/following::span[1]";
 			}
 
 

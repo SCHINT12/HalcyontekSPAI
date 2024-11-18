@@ -66,10 +66,21 @@ WebDriver driver;
 		return ele;
 	}
 	
-	public void  formproductNameXpathWithText1()
+	public void  selectProductMixedLiversCombo()
 	{
 	
-		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Combo']"));
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Dinner']"));
+		
+	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
+		
+		// By.xpath("//*[text()='8 Boneless Hot Wings Combo']/following::div[@class='card-footer'][1]/div[2]
+		ele.click();
+	}
+	
+	public void  selectProductMixedLiversDinner()
+	{
+	
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Dinner']"));
 		
 	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
 		
