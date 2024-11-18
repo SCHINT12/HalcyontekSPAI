@@ -1,0 +1,2137 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>AutomationProject</title>
+<link rel="apple-touch-icon" href="spark/logo.png">
+<link rel="shortcut icon" href="spark/logo.png">
+<link rel="stylesheet" href="spark/spark-style.css">
+<link rel="stylesheet" href="spark/font-awesome.min.css">
+<script src="spark/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report ">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('spark/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 18, 2024 06:53:05 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('device-view')">
+<a id="nav-device" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tablet"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 18, 2024 06:53:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 18, 2024 07:09:44 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>19</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>97</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Halcyontek Speedline.AI --Combo Meals":998.051
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Halcyon-ASE</td>
+<td>19</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>95%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@GreatTest</td>
+<td>19</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>95%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 device-container">
+<div class="card">
+<div class="card-header"><p>Device</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>windows10</td>
+<td>19</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>95%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>11</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 19,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 97,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Halcyon-ASE</p>
+<p class="duration text-sm">20 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Halcyon-ASE</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:54:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:58:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:00:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='112'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:02:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='137'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='149'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='161'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='198'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:07:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='210'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:08:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:09:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='234'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view device-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">windows10</p>
+<p class="duration text-sm">20 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>windows10</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:54:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:58:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:00:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='112'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:02:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='137'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='149'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='161'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='198'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:07:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='210'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:08:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:09:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='234'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@GreatTest</p>
+<p class="duration text-sm">20 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GreatTest</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:54:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:58:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:58:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='88'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:00:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='112'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='125'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:02:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='137'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='149'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='161'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='198'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:07:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='210'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:08:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:09:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='234'>All items checking</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Halcyon-ASE</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@GreatTest</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
+<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">windows10</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Halcyontek Speedline.AI --Combo Meals</p>
+            <p class="text-sm">
+              <span>6:53:06 pm</span> / <span>00:16:38:051</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Halcyontek Speedline.AI --Combo Meals</h5>
+<span class='badge badge-success'>11.18.2024 6:53:06 pm</span>
+<span class='badge badge-danger'>11.18.2024 7:09:44 pm</span>
+<span class='badge badge-default'>00:16:38:051</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Side Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "4 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)" for "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Beverages"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "4 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "unsweet_iced_tea_-_med,unsweet_iced_tea_-_lg,unsweet_iced_tea_-_x-lg,unsweet_iced_tea_-_gal,sweet_iced_tea_-_med,sweet_iced_tea_-_lg,sweet_iced_tea_-_x-lg,sweet_iced_tea_-_gal,coke_-_16oz,coke_-_32oz,coke_-_44oz,diet_coke_-_16oz,diet_coke_-_32oz,diet_coke_-_44oz,sprite_-_16oz,sprite_-_32oz,sprite_-_44oz,dr._pepper_-_16oz,dr._pepper_-_32oz,dr._pepper_-_44oz,diet_dr._pepper_-_16oz,diet_dr._pepper_-_32oz,diet_dr._pepper_-_44oz,lemonade_-_16oz,lemonade_-_32oz,lemonade_-_44oz,fruit_punch_-_16oz,fruit_punch_-_32oz,fruit_punch_-_44oz,bottled_water" for "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sides"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "4 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sides"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)" for "Sides"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sauce Extras"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "4 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup" for "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Drink Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "4 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz" for "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log fail-bg mr-2">Fail</span>All items checking</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Side Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "7 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)" for "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="76"><span class="badge log fail-bg mr-2">Fail</span>All items checking</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Beverages"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user is not able to click the driventhrough
+      </div>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Pink']"}
+  (Session info: chrome=130.0.6723.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [09a7e46a5abba189fc622f4d8c1421fd, findElement {using=xpath, value=//*[text()='Pink']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Shiva.N\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60390/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09a7e46a5abba189fc622f4d8c1421fd
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.dummypage.getvehicleColor(dummypage.java:41)
+	at stepdefinitions.orderFlowSteps.i_click_on_color_vehicle(orderFlowSteps.java:74)
+	at ✽.I click on "Pink" color vehicle model "Car" with Lane "Lane1"(file:///C:/Users/Shiva.N/eclipse-workspace/HalcyontekSPAI-master/HalcyontekSPAI-master/src/test/java/features/orderflow.feature:78)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepdefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>[B@1f42366
+          <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,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" class="base64-img" data-featherlight="image"><img src=""></a>
+        
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I click the product "7 Express Tenders Combo"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I navigate to "Beverages"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then validate prices for products "unsweet_iced_tea_-_med,unsweet_iced_tea_-_lg,unsweet_iced_tea_-_x-lg,unsweet_iced_tea_-_gal,sweet_iced_tea_-_med,sweet_iced_tea_-_lg,sweet_iced_tea_-_x-lg,sweet_iced_tea_-_gal,coke_-_16oz,coke_-_32oz,coke_-_44oz,diet_coke_-_16oz,diet_coke_-_32oz,diet_coke_-_44oz,sprite_-_16oz,sprite_-_32oz,sprite_-_44oz,dr._pepper_-_16oz,dr._pepper_-_32oz,dr._pepper_-_44oz,diet_dr._pepper_-_16oz,diet_dr._pepper_-_32oz,diet_dr._pepper_-_44oz,lemonade_-_16oz,lemonade_-_32oz,lemonade_-_44oz,fruit_punch_-_16oz,fruit_punch_-_32oz,fruit_punch_-_44oz,bottled_water" for "Beverages"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sides"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "7 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sides"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)" for "Sides"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sauce Extras"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "7 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup" for "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="112"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Drink Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "7 Express Tenders Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz" for "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="125"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Side Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "9 Gizzards Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)" for "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Beverages"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "9 Gizzards Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "unsweet_iced_tea_-_med,unsweet_iced_tea_-_lg,unsweet_iced_tea_-_x-lg,unsweet_iced_tea_-_gal,sweet_iced_tea_-_med,sweet_iced_tea_-_lg,sweet_iced_tea_-_x-lg,sweet_iced_tea_-_gal,coke_-_16oz,coke_-_32oz,coke_-_44oz,diet_coke_-_16oz,diet_coke_-_32oz,diet_coke_-_44oz,sprite_-_16oz,sprite_-_32oz,sprite_-_44oz,dr._pepper_-_16oz,dr._pepper_-_32oz,dr._pepper_-_44oz,diet_dr._pepper_-_16oz,diet_dr._pepper_-_32oz,diet_dr._pepper_-_44oz,lemonade_-_16oz,lemonade_-_32oz,lemonade_-_44oz,fruit_punch_-_16oz,fruit_punch_-_32oz,fruit_punch_-_44oz,bottled_water" for "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="149"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sides"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "9 Gizzards Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sides"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)" for "Sides"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="161"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sauce Extras"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "9 Gizzards Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup" for "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="173"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Drink Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "9 Gizzards Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz" for "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Side Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "8 Boneless Hot Wings Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)" for "Side Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="198"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Beverages"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "8 Boneless Hot Wings Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "unsweet_iced_tea_-_med,unsweet_iced_tea_-_lg,unsweet_iced_tea_-_x-lg,unsweet_iced_tea_-_gal,sweet_iced_tea_-_med,sweet_iced_tea_-_lg,sweet_iced_tea_-_x-lg,sweet_iced_tea_-_gal,coke_-_16oz,coke_-_32oz,coke_-_44oz,diet_coke_-_16oz,diet_coke_-_32oz,diet_coke_-_44oz,sprite_-_16oz,sprite_-_32oz,sprite_-_44oz,dr._pepper_-_16oz,dr._pepper_-_32oz,dr._pepper_-_44oz,diet_dr._pepper_-_16oz,diet_dr._pepper_-_32oz,diet_dr._pepper_-_44oz,lemonade_-_16oz,lemonade_-_32oz,lemonade_-_44oz,fruit_punch_-_16oz,fruit_punch_-_32oz,fruit_punch_-_44oz,bottled_water" for "Beverages"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="210"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sides"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "8 Boneless Hot Wings Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sides"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)" for "Sides"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Sauce Extras"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "8 Boneless Hot Wings Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup" for "Sauce Extras"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="234"><span class="badge log pass-bg mr-2">Pass</span>All items checking</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user able to launch browser and select Place of service for "Drink Choice"</span>
+      <div>Application URL Launched
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+      <div>user clicked the driventhrough
+      </div>
+      <div>user clicked the Pink
+      </div>
+      <div>user clicked the Car
+      </div>
+      <div>user clicked the Lane1
+      </div>
+      <div>user clicked the menu
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click the product "8 Boneless Hot Wings Combo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I navigate to "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then validate prices for products "coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz" for "Drink Choice"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:58:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='79'>And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</a>
+<div class="">
+<span class="badge badge-default">Halcyontek Speedline.AI --Combo Meals.All items checking.And I click on "Pink" color vehicle model "Car" with Lane "Lane1"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="spark/spark-script.js"></script>
+<script type="text/javascript">
+        </script></body>
+</html>
