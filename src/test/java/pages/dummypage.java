@@ -27,6 +27,8 @@ WebDriver driver;
 	@FindBy(xpath="//*[@class='menuBtn']")
 	public static WebElement menu;
 	
+	
+	
 	public dummypage(WebDriver rdriver)
 	{
 		this.driver=rdriver;
@@ -56,13 +58,36 @@ WebDriver driver;
 	
 	public WebElement formproductNameXpathWithText(String text)
 	{
-		
+	
 		WebElement ele=driver.findElement(By.xpath("//*[text()='"+text+"']/following::div[@class='card-footer'][1]/div[2]"));
 		
 		
 		// By.xpath("//*[text()='8 Boneless Hot Wings Combo']/following::div[@class='card-footer'][1]/div[2]
 		return ele;
 	}
+	
+	public void  selectProductMixedLiversCombo()
+	{
+	
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Dinner']"));
+		
+	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
+		
+		// By.xpath("//*[text()='8 Boneless Hot Wings Combo']/following::div[@class='card-footer'][1]/div[2]
+		ele.click();
+	}
+	
+	public void  selectProductMixedLiversDinner()
+	{
+	
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Dinner']"));
+		
+	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
+		
+		// By.xpath("//*[text()='8 Boneless Hot Wings Combo']/following::div[@class='card-footer'][1]/div[2]
+		ele.click();
+	}
+	
 	
 	public WebElement formXpathWithText(String text)
 	{

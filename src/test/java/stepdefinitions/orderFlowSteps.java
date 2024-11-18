@@ -86,7 +86,24 @@ public class orderFlowSteps  {
 	@When("I click the product {string}")
 	public void i_click_the_product(String productname) {
 		obj_dummypage.formproductNameXpathWithText(productname).click();
+		
+		
 	}
+	
+	@When("I click Mixed Livers protuct")
+	public void i_click_mixed_livers_products()
+	{
+		obj_dummypage.selectProductMixedLiversCombo();
+	}
+	
+	
+	@When("I click Mixed Livers Dinner protuct")
+	public void i_click_mixed_livers_dinner_protuct()
+	{
+		obj_dummypage.selectProductMixedLiversDinner();
+	}
+	
+	
 
 	@Then("validate prices for products {string} for {string}")
 	public void validate_prices(String products,String Section) throws InterruptedException {
@@ -113,8 +130,12 @@ public class orderFlowSteps  {
 			}
 			else if(Section.equals("Drink Choice") || Section.equals("Side Choice"))
 			{
-				str="//*[text()='"+s+"']/following-sibling::span";
+				str="//*[text()='"+s+"']/following-sibling::span";	
 
+			}
+			else if (Section.equals("Side Choices (Pick 2)"))
+			{
+				str="//*[text()='"+s+"']/following::span[1]";
 			}
 
 
