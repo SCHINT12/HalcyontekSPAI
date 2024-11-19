@@ -88,6 +88,15 @@ WebDriver driver;
 		ele.click();
 	}
 	
+	public void  selectProduct9Gizzards()
+	{
+	
+		WebElement NineGizzards=driver.findElement(By.xpath("//*[text()='9 Gizzards']"));
+		NineGizzards.click();
+		
+	}
+	
+	
 	
 	public WebElement formXpathWithText(String text)
 	{

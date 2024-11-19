@@ -19,8 +19,6 @@ public class orderflow_raw_code {
 		driver.navigate().to("https://paymentstage.speedlane.ai/device?did=QXV0b21hdGlvbg==");
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	
-	
 		
 		WebElement SelectPOS=driver.findElement(By.id("driveThroughBtn"));
 		SelectPOS.click();
