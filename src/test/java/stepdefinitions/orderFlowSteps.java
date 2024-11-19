@@ -103,6 +103,11 @@ public class orderFlowSteps  {
 		obj_dummypage.selectProductMixedLiversDinner();
 	}
 	
+	@When("I click the product 9 Gizzards")
+	public void i_click_the_product_9_gizzards()
+	{
+		obj_dummypage.selectProduct9Gizzards();
+	}
 	
 
 	@Then("validate prices for products {string} for {string}")
@@ -160,13 +165,8 @@ public class orderFlowSteps  {
 							+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+"");
 					comn.moveElement(ele,testContextSetup.driver);
 				Assert.fail();
-					
-
-//					String path=comn.takeScreenshot(driver);
-//					Assert.assertEquals(actualval, expected.get(s));
-//					comn.captureAndAttachScreenshot(driver);
-							
-					
+				
+				
 				}
 				System.out.println("###############################################################");
 
@@ -180,10 +180,6 @@ public class orderFlowSteps  {
 		}
 	
 	}
-
-
-
-
 
 
 	@When("user able add to card food items")

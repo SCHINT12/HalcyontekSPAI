@@ -4,7 +4,7 @@ WebElement addextragravy=driver.findElement(By.xpath(""));
 //*[text()='green beans - sm']/parent::div/preceding-sibling::div/child::a[@class='counterAdd']
 String str="//*[text()='"+s+"']/parent::div/following-sibling::div/span";
 
-"//*[text()='"s"']/following::span[1]";
+"//*[text()='"+s+"']/following::span[1]";
 
 
 
