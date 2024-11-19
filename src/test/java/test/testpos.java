@@ -20,16 +20,15 @@ public class testpos {
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-//		WebElement Togo=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn togoCard']"));
-//		Togo.click();
-//		
+	
+		
 		
 		List<WebElement> mainpageitems=driver.findElements(By.xpath("//*[@class='card-body']"));
 		
 		for (WebElement mpi:mainpageitems)
 		{
-			System.out.println(mpi.getText());
-			
+			System.out.print(mpi.getText().replace(" ", "_"));
+			System.out.print(",");
 			
 		}
 		
@@ -37,7 +36,7 @@ public class testpos {
 	
 		
 	
-		System.out.println("All done ");
+	
 	
 
 	}

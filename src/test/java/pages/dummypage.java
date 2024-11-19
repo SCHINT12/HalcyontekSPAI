@@ -12,7 +12,7 @@ public class dummypage {
 	
 WebDriver driver;
 
-	@FindBy(id="driveThroughBtn")
+	@FindBy(xpath = "//*[@class='btn btn-lg actionTypeBtn driveThroughCard']")
 	public static WebElement drivethrough;
 	
 	@FindBy(xpath="//*[@class='vehicleColor rippleEffect redColor']")

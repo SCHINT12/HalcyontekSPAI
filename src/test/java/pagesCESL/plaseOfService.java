@@ -41,7 +41,7 @@ public class plaseOfService extends Common {
 	
 	public void SelectPosDriverThrough()
 	{
-		WebElement SelectPOS=driver.findElement(By.id("driveThroughBtn"));
+		WebElement SelectPOS=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn driveThroughCard']"));
 		SelectPOS.click();
 		
 		WebElement vehiclecolour=driver.findElement(By.xpath("//*[@class='vehicleColor rippleEffect redColor']"));
