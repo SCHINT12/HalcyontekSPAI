@@ -1,4 +1,4 @@
-@device_windows10 @author_Halcyon-ASE
+@device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --FRIED FISH FILLETS
 @FFFTest
 Scenario Outline: All items checking 2 Fillets Combo

@@ -1,4 +1,4 @@
-@device_windows10 @author_Halcyon-ASE
+@device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --Family Meals
 @FMtest
 Scenario Outline: All items checking 

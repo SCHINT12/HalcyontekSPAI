@@ -1,4 +1,4 @@
-@device_windows10 @author_Halcyon-ASE_CSN
+@device_windows10 @author_Halcyon-CSN
 Feature: Main page products validate
 
 @mainPageValidation

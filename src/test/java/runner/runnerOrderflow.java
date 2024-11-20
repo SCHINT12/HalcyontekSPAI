@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features/orderflow.feature",glue ={"stepdefinitions"},monochrome = true,
+		features = "src/test/java/features/comboMeals.feature",glue ={"stepdefinitions"},monochrome = true,tags = "@CMNTest",
 		plugin= {"pretty","html:target/cucumber.html"})	
 public class runnerOrderflow {
 
