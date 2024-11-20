@@ -1,6 +1,7 @@
 package pagesCESL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ import pages.dummypage;
 
 public class plaseOfService extends Common {
 	
-	WebDriver driver;
+	static WebDriver driver;
 	
 	@FindBy(xpath="//*[text()='Here']")
 	public static WebElement PosHere;
@@ -65,7 +66,7 @@ public class plaseOfService extends Common {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void SelectPosHere()
+	public static void SelectPosHere()
 	{
 		WebElement Here=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn frontDeskCard']"));
 		Here.click();
@@ -76,19 +77,20 @@ public class plaseOfService extends Common {
 			
 	}
 	
-	public void SelectPosTogo() throws InterruptedException
+	public static void SelectPosTogo() throws InterruptedException
 	
-	{
+	{	
 		WebElement Togo=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn togoCard']"));
 		Togo.click();
 		WebElement Togotent1=driver.findElement(By.xpath("//*[text()='1 ']"));
 		Togotent1.click();	
+		Thread.sleep(5000);
 		WebElement Togocontiune=driver.findElement(By.xpath("//*[text()='Continue']"));
 		Togocontiune.click();
 	}
 	
 	
-	public void SelectPosPhone()
+	public static void SelectPosPhone()
 	{
 			click(driver, PosPhone, "Phone");
 	

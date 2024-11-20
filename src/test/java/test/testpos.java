@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import pagesCESL.plaseOfService;
+
 public class testpos {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -16,27 +18,19 @@ public class testpos {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://chickenev3.speedlane.ai/??kiosk=1&oreset=1&Mode=Dinein&Tent=Tent1&type=5");
-		
+		driver.navigate().to("https://paymentstage.speedlane.ai/device?did=QXV0b21hdGlvbg==");
+		Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-	
+		plaseOfService pos=new plaseOfService(driver);
 		
+		pos.SelectPosPhone();
 		
-		List<WebElement> mainpageitems=driver.findElements(By.xpath("//*[@class='card-body']"));
-		
-		for (WebElement mpi:mainpageitems)
-		{
-			System.out.print(mpi.getText().replace(" ", "_"));
-			System.out.print(",");
+		driver.quit();
 			
-		}
-		
 		
 	
 		
-	
-	
 	
 
 	}
