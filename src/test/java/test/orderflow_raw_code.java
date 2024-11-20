@@ -20,7 +20,7 @@ public class orderflow_raw_code {
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		WebElement SelectPOS=driver.findElement(By.id("driveThroughBtn"));
+		WebElement SelectPOS=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn driveThroughCard']"));
 		SelectPOS.click();
 		
 		WebElement vehiclecolour=driver.findElement(By.xpath("//*[@class='vehicleColor rippleEffect redColor']"));

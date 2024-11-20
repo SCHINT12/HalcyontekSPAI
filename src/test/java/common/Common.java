@@ -30,7 +30,7 @@ public class Common {
 		this.driver=driver;
 	}
 
-	public boolean click(WebDriver driver,WebElement ele,String elementName)
+	public static boolean click(WebDriver driver,WebElement ele,String elementName)
 	{
 		boolean flag=false;
 		try

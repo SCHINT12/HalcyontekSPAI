@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features/DinnerComboMeals.feature",glue ={"stepdefinitions"},monochrome = true,tags = "@DCMMLDTest",
+		features = "src/test/java/features/DinnerComboMeals.feature",glue ={"stepdefinitions"},monochrome = true,tags = "@DCMtest",
 				plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)	
 
