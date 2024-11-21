@@ -1,16 +1,23 @@
 package test;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class orderflow_raw_code {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		
 		
@@ -66,6 +73,13 @@ public class orderflow_raw_code {
 		
 		WebElement Addorder=driver.findElement(By.xpath("//*[@class='btnText lh36']"));
 		Addorder.click();
+		
+		Thread.sleep(5000);
+
+		String timestamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File srcfile= ts.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcfile, new File ("E:\\screenshots\\"+timestamp+".png"));
 		
 		
 		System.out.println("done");

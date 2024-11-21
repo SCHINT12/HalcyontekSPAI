@@ -24,7 +24,7 @@ import com.google.common.primitives.Bytes;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 public class Common {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Common()
 	{
 		this.driver=driver;

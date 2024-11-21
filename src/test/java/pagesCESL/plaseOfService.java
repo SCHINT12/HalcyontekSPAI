@@ -20,7 +20,7 @@ public class plaseOfService extends Common {
 	@FindBy(xpath="//*[text()='Togo']")
 	public static WebElement PosTogo;
 		
-	@FindBy(xpath="//*[text()='Phone']")
+	@FindBy(xpath="//*[@class='btn btn-lg actionTypeBtn phoneCard']")
 	public static WebElement PosPhone;
 	
 ////// Select driveThrough
@@ -92,8 +92,9 @@ public class plaseOfService extends Common {
 	
 	public static void SelectPosPhone()
 	{
-			click(driver, PosPhone, "Phone");
-	
+		WebElement Phone=driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn phoneCard']"));
+		Phone.click();
+		
 	}
 	
 
