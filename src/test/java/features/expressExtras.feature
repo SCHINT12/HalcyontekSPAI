@@ -1,6 +1,6 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --EXPRESS EXTRAS
-@EESTest
+@EESTest @all
 Scenario Outline: All items checking 2 Pieces Chicken
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"

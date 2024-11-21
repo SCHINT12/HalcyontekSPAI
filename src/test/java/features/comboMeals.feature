@@ -1,6 +1,6 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --Dinner Combo Meals
-@CMN1Test
+@CMN11Test @all
 Scenario Outline: All items checking 
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"

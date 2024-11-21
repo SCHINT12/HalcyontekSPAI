@@ -1,7 +1,7 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Main page products validate
 
-@mainPageValidation
+@mainPageValidation 
 Scenario Outline: Validate All Items present in Main Page
 Given I able to launch browser and select Place of service
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"
