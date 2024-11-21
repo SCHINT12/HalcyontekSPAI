@@ -39,7 +39,9 @@ public class testPageCESL extends Common{
 		Thread.sleep(5000);
 		
 		obj_comboMeals.breatOptions();
-		obj_comboMeals.tendersOptions();
+	//	obj_comboMeals.tendersOptions();
+		obj_comboMeals.sauceChoicesPick2();
+		
 		
 		Thread.sleep(5000);
 
@@ -49,7 +51,7 @@ public class testPageCESL extends Common{
 		FileUtils.copyFile(srcfile, new File ("E:\\screenshots\\"+timestamp+".png"));
 		
 		
-		
+		System.out.println("################################################################");
 	}
 
 }

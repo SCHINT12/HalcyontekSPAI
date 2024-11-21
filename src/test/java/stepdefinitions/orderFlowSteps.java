@@ -109,6 +109,11 @@ public class orderFlowSteps  {
 		obj_dummypage.selectProduct9Gizzards();
 	}
 	
+	@When("I click the product Kids Meal")
+	public void i_click_the_product_kids_meal()
+	{
+		obj_dummypage.SelectKidsMeal();
+	}
 
 	@Then("validate prices for products {string} for {string}")
 	public void validate_prices(String products,String Section) throws InterruptedException {
