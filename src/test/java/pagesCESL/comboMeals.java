@@ -84,5 +84,25 @@ public class comboMeals extends Common {
 	}
 	
 	
+	public static void tenders_Choice_Pick_7() throws InterruptedException
+
+	{
+		WebElement sauceChoice2=driver.findElement(By.xpath("//*[text()='Sauce Choices (Pick 2)']"));
+		sauceChoice2.click();
+		
+		List<WebElement> elements  = driver.findElements(By.xpath("//*[@id='saucechoicespick2']/following-sibling::label/div/div/label[@class='menu-item-label']"));
+		
+		for (WebElement ele :elements)
+		{
+			System.out.println(ele.getText());
+		}
+			
+	
+	}
+	
+	
+	
+	
+	
 	
 }
