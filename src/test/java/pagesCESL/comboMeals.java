@@ -28,8 +28,11 @@ public class comboMeals extends Common {
 
 	{
 		Thread.sleep(5000);
-		WebElement Boneless8=driver.findElement(By.xpath("//*[text()='4 Express Tenders Combo']/following::div[@class='card-footer'][1]/div[2]"));
+		WebElement Boneless8=driver.findElement(By.xpath("//*[text()='3 Piece Chicken Combo']/following::div[@class='card-footer'][1]/div[2]"));
 		Boneless8.click();
+		
+		
+		
 	}
 	
 	public static void breatOptions() throws InterruptedException
@@ -61,5 +64,25 @@ public class comboMeals extends Common {
 		}	
 	
 	}
+	
+	//Sauce Choices (Pick 2):
+	
+	public static void sauceChoicesPick2() throws InterruptedException
+
+	{
+		WebElement sauceChoice2=driver.findElement(By.xpath("//*[text()='Sauce Choices (Pick 2)']"));
+		sauceChoice2.click();
+		
+		List<WebElement> elements  = driver.findElements(By.xpath("//*[@id='saucechoicespick2']/following-sibling::label/div/div/label[@class='menu-item-label']"));
+		
+		for (WebElement ele :elements)
+		{
+			System.out.println(ele.getText());
+		}
+			
+	
+	}
+	
+	
 	
 }

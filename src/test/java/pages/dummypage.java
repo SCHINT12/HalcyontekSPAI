@@ -66,6 +66,17 @@ WebDriver driver;
 		return ele;
 	}
 	
+	public WebElement SelectKidsMeal()
+	{
+	
+		WebElement ele=driver.findElement(By.xpath("(//*[text()='Kids Meal']/following::div[@class='card-footer'][1]/div[2])[2]"));
+		
+		ele.click();
+		return ele;
+		
+	
+	}
+	
 	public void  selectProductMixedLiversCombo()
 	{
 	

@@ -64,6 +64,16 @@ public class orderFlowSteps  {
 		init(product);
 		ExtentCucumberAdapter.addTestStepLog("Application URL Launched");
 	}
+	
+///////////////////////////////////////// mainpage validation stpes///////////////////////////////////////////////////
+	
+	@Given("I able to launch browser and initiate config properties for {string}")
+	public void i_able_to_launch_browser_and_initiate_config_properties_for(String product) throws IOException {
+		init(product);
+		ExtentCucumberAdapter.addTestStepLog("Application URL Launched");
+	}
+
+///////////////////////////////////////// end ////////////////////////////////////////////////////////////////////////
 
 	@Given("I click on {string} color vehicle model {string} with Lane {string}")
 	public void i_click_on_color_vehicle(String col,String model,String lane) throws InterruptedException {
@@ -109,6 +119,11 @@ public class orderFlowSteps  {
 		obj_dummypage.selectProduct9Gizzards();
 	}
 	
+	@When("I click the product Kids Meal")
+	public void i_click_the_product_kids_meal()
+	{
+		obj_dummypage.SelectKidsMeal();
+	}
 
 	@Then("validate prices for products {string} for {string}")
 	public void validate_prices(String products,String Section) throws InterruptedException {
@@ -214,8 +229,65 @@ public class orderFlowSteps  {
 
 		obj_dummypage.formXpathWithText(section).click();
 	}
+	
+	///////////////////////////////////////// mainpage validation stpes///////////////////////////////////////////////////
 
+@Then("validate prices for products Main Page Products {string}")
+	public void validate_prices_main_page(String products) throws InterruptedException {
+		String allproducts=products;
+		String[] product=allproducts.split(",");
+		LinkedHashMap<String,String> expected=new LinkedHashMap<String,String>();
+		for(String p:product)
+		{
+			String p_org=p;
+			
+			p=p.replace("_", " ");
+			
+			expected.put(p, prop.getProperty(p_org));
+		}
+		System.out.println(expected);
+		String str="";
+		for(String s:expected.keySet())
+		{
 
+			////*[text()='Kids Meal']/parent::div/parent::div/following-sibling::div/div[@class='itemPrice']
+								
+			str="//*[text()='"+s+"']/parent::div/parent::div/following-sibling::div/div[@class='itemPrice']";
+			
+		WebElement ele=testContextSetup.driver.findElement(By.xpath(str));
+		Thread.sleep(2000);
+		
+		String actualval=ele.getText();
+		System.out.println("###############################################################");
+		System.out.println("Actual Price for product:: "+s+" is : "+actualval);
+		System.out.println("Expected Price for product:: "+s+" is : "+expected.get(s));
+
+		if(expected.get(s).equals(actualval))
+		{
+			System.out.println("No Change in price: Where actual price is-"
+					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+"");
+			
+			ExtentCucumberAdapter.addTestStepLog("<B> No Change in price: Where actual price is-"
+					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+" </B>");
+			
+		}
+		else
+		{
+			ExtentCucumberAdapter.addTestStepLog("<B> Change in price: Where actual price is-"
+					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+" </B>");
+			System.out.println("Change in price: Where actual price is-"
+					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+"");
+			comn.moveElement(ele,testContextSetup.driver);
+		Assert.fail();
+		
+		}
+		System.out.println("###############################################################");
+		
+	}
+	}
+	
+	
+	///////////////////////////////////////// end///////////////////////////////////////////////////
 
 
 }
