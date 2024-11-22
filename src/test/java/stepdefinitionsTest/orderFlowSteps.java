@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitionsTest;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -64,16 +64,6 @@ public class orderFlowSteps  {
 		init(product);
 		ExtentCucumberAdapter.addTestStepLog("Application URL Launched");
 	}
-	
-///////////////////////////////////////// mainpage validation stpes///////////////////////////////////////////////////
-	
-	@Given("I able to launch browser and initiate config properties for {string}")
-	public void i_able_to_launch_browser_and_initiate_config_properties_for(String product) throws IOException {
-		init(product);
-		ExtentCucumberAdapter.addTestStepLog("Application URL Launched");
-	}
-
-///////////////////////////////////////// end ////////////////////////////////////////////////////////////////////////
 
 	@Given("I click on {string} color vehicle model {string} with Lane {string}")
 	public void i_click_on_color_vehicle(String col,String model,String lane) throws InterruptedException {
@@ -231,6 +221,17 @@ public class orderFlowSteps  {
 	}
 	
 	///////////////////////////////////////// mainpage validation stpes///////////////////////////////////////////////////
+	@Given("I able to launch browser and initiate config properties for {string}")
+	public void i_able_to_launch_browser_and_select_place_of_service(String product) throws IOException {
+		init(product);
+//		driver=new ChromeDriver();
+//		driver.manage().window().maximize();
+//		driver.navigate().to(prop.getProperty("Url"));
+//		driver.manage().timeouts().implicitlyWait(10 ,TimeUnit.SECONDS);
+//		ExtentCucumberAdapter.addTestStepLog("Application URL Launched");
+	}
+
+
 
 @Then("validate prices for products Main Page Products {string}")
 	public void validate_prices_main_page(String products) throws InterruptedException {
@@ -266,10 +267,6 @@ public class orderFlowSteps  {
 		{
 			System.out.println("No Change in price: Where actual price is-"
 					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+"");
-			
-			ExtentCucumberAdapter.addTestStepLog("<B> No Change in price: Where actual price is-"
-					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+" </B>");
-			
 		}
 		else
 		{
