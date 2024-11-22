@@ -259,16 +259,16 @@ public class orderFlowSteps  {
 		
 		String actualval=ele.getText();
 		System.out.println("###############################################################");
-		System.out.println("Actual Price for product:: "+s+" is : "+actualval);
-		System.out.println("Expected Price for product:: "+s+" is : "+expected.get(s));
+		//System.out.println("Actual Price for product:: "+s+" is : "+actualval);
+		//System.out.println("Expected Price for product:: "+s+" is : "+expected.get(s));
 
 		if(expected.get(s).equals(actualval))
 		{
 			System.out.println("No Change in price: Where actual price is-"
 					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+"");
 			
-			ExtentCucumberAdapter.addTestStepLog("<B> No Change in price: Where actual price is-"
-					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+" </B>");
+//			ExtentCucumberAdapter.addTestStepLog("<B> No Change in price: Where actual price is-"
+//					+ " "+actualval+" and Expected price is "+expected.get(s)+" for product:: "+s+" </B>");
 			
 		}
 		else
