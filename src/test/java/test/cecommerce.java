@@ -16,15 +16,15 @@ public class cecommerce {
 
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://payment.speedlane.ai/device?did=ZGQ=");
+		driver.navigate().to("https://chickenev3.speedlane.ai/??kiosk=1&oreset=1&Mode=Dinein&Tent=Tent1&type=5#combo");
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn phoneCard']")).click();
+	//	driver.findElement(By.xpath("//*[@class='btn btn-lg actionTypeBtn phoneCard']")).click();
 		
 		Thread.sleep(10000);
 		
-		List<WebElement> mainpageitems=driver.findElements(By.xpath("//*[@class='iitemclass_Test itemCardTitle']"));
+		List<WebElement> mainpageitems=driver.findElements(By.xpath("//*[@class='card-body']"));
 		
 		for (WebElement mpi:mainpageitems)
 		{
