@@ -96,8 +96,14 @@ public class orderFlowSteps  {
 	@When("I click the product {string}")
 	public void i_click_the_product(String productname) {
 		obj_dummypage.formproductNameXpathWithText(productname).click();
-		
-		
+			
+	}
+	
+
+	@When("I click the product 2 Piece Chicken Dinner")
+	public void i_click_the_product_2_piece_chicken_dinner() 
+	{
+		obj_dummypage.selectProduct2PieceChickenDinner();
 	}
 	
 	@When("I click Mixed Livers protuct")

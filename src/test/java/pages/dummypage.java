@@ -88,6 +88,18 @@ WebDriver driver;
 		ele.click();
 	}
 	
+	
+	public void  selectProduct2PieceChickenDinner()
+	{
+	
+		WebElement ele=driver.findElement(By.xpath("//*[text()='2 Piece Chicken Dinner']"));
+		
+	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
+		
+		// By.xpath("//*[text()='8 Boneless Hot Wings Combo']/following::div[@class='card-footer'][1]/div[2]
+		ele.click();
+	}
+	
 	public void  selectProductMixedLiversDinner()
 	{
 	
