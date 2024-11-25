@@ -1,6 +1,6 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --Combo Meals
-@CM-4ETC @CM
+@CM_4ETC @CM
 Scenario Outline: Sub items checking under - 4 Express Tenders Combo 
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -15,7 +15,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-7ETC @CM
+@CM_7ETC @CM
 Scenario Outline: Sub items checking under - 7 Express Tenders Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -30,7 +30,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-3PCM @CM
+@CM_3PCM @CM
 Scenario Outline: Sub items checking under - 3 Piece Chicken Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -45,7 +45,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-2PCC @CM
+@CM_2PCC @CM
 Scenario Outline: Sub items checking under - 2 Piece Chicken Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -60,7 +60,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-6LC @CM
+@CM_6LC @CM
 Scenario Outline: Sub items checking under - 6 Livers Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -75,7 +75,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-8BHWC @CM
+@CM_8BHWC @CM
 Scenario Outline: Sub items checking under - 8 Boneless Hot Wings Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -90,7 +90,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-9GC @CM
+@CM_9GC @CM
 Scenario Outline: Sub items checking under - 9 Gizzards Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Pink" color vehicle model "Car" with Lane "Lane1"
@@ -105,11 +105,11 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Drink Choice|coke_-_32oz,diet_coke_-_32oz,sprite_-_32oz,dr._pepper_-_32oz,diet_dr._pepper_-_32oz,lemonade_-_32oz,fruit_punch_-_32oz,coca-cola_-_44oz,diet_coke_-_44oz,sprite_-_44oz,dr._pepper_-_44oz,diet_dr._pepper_-_44oz,lemonade_-_44oz,fruit_punch_-_44oz|
 
-@CM-MLGC @CM
+@CM_MLGC @CM
 Scenario Outline: Sub items checking under - Mixed Livers & Gizzards Combo
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
-When I click Mixed Livers protuct
+When I click Mixed Livers & Gizzards Combo
 And I navigate to "<product category>"
 Then validate prices for products "<addons>" for "<product category>"
 Examples:

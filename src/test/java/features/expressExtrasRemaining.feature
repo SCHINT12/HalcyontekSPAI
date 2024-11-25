@@ -1,7 +1,7 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --EXPRESS EXTRAS Remain Items
 
-@EE-24PHW @EE
+@EE_24PHW @EE
 Scenario Outline: Sub items checking under - 24 Piece Boneless Hot Wings in Express Extras
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"
@@ -14,7 +14,7 @@ Examples:
 |Sides|french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)|
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 
-@EE-6L @EE
+@EE_6L @EE
 Scenario Outline: Sub items checking under - 6 Livers in Express Extras
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"
@@ -27,7 +27,7 @@ Examples:
 |Sides|french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)|
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 
-@EE-12L  @EE
+@EE_12L  @EE
 Scenario Outline: Sub items checking under - 12 Livers in Express Extras
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"
@@ -41,7 +41,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 
 
-@EE-9G @EE
+@EE_9G @EE
 Scenario Outline: Sub items checking under -  9 Gizzards in Express Extras
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"
@@ -54,7 +54,7 @@ Examples:
 |Sides|french_fries_-_sm,fried_okra_-_sm,mash_pot_w/_gravy_-_sm,mash_pot_w/o_gravy_-_sm,cole_slaw_-_sm,macaroni_&_cheese_-_sm,green_beans_-_sm,mini_poppers_(3),corn_on_cob_(1),cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie_(1),cherry_pie_(1),french_fries_-_lg,fried_okra_-_lg,mash_pot_w/_gravy_-_lg,mash_pot_w/o_gravy_-_lg,cole_slaw_-lg,macaroni_&_cheese_-_lg,green_beans_-_lg,mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24),apple_pie_(4),cherry_pie_(4),chocolate_chip_cookie_(1),chocolate_chip_cookies_(6),chocolate_chip_cookies_(12)|
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 
-@EE-18G @EE
+@EE_18G @EE
 Scenario Outline: Sub items checking under - 18 Gizzards in Express Extras
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Car" with Lane "Lane3"

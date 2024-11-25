@@ -80,7 +80,7 @@ WebDriver driver;
 	public void  selectProductMixedLiversCombo()
 	{
 	
-		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Dinner']"));
+		WebElement ele=driver.findElement(By.xpath("//*[text()='Mixed Livers & Gizzards Combo']"));
 		
 	//	(//*[contains(text(),'"+text+"')]/following::div[@class='card-footer'][1]/div[2])[1]
 		
@@ -119,6 +119,15 @@ WebDriver driver;
 		
 	}
 	
+	public void OnePieceChickenSnackPack() {
+		WebElement OnePieceChickenSnackPack=driver.findElement(By.xpath("//*[text()='1 Piece Chicken Snack Pack']"));
+		OnePieceChickenSnackPack.click();	
+	}
+	
+	public void EightPieceBonelessHotWings() {
+		WebElement ele=driver.findElement(By.xpath("//*[text()='8 Piece Boneless Hot Wings']"));
+		ele.click();	
+	}
 	
 	
 	public WebElement formXpathWithText(String text)
@@ -127,6 +136,7 @@ WebDriver driver;
 		WebElement ele=driver.findElement(By.xpath("//*[text()='"+text+"']"));
 		return ele;
 	}
+
 	
 
 	

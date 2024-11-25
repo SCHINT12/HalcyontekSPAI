@@ -1,7 +1,7 @@
 @device_windows10 @author_Halcyon-CSN
 Feature: Halcyontek Speedline.AI --Dinner Combo Meals
 
-@DCM-4ETD @DCM
+@DCM_4ETD @DCM
 Scenario Outline: Sub items checking under -  4 Express Tenders Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -16,7 +16,7 @@ Examples:
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
 
-@DCM-7ETD @DCM
+@DCM_7ETD @DCM
 Scenario Outline: Sub items checking under -  7 Express Tenders Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -30,7 +30,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
-@DCM-3PCH @DCM
+@DCM_3PCH @DCM
 Scenario Outline: Sub items checking under -  3 Piece Chicken Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -45,7 +45,7 @@ Examples:
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
 
-@DCM-2PCD @DCM
+@DCM_2PCD @DCM
 Scenario Outline: Sub items checking under -  2 Piece Chicken Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -59,7 +59,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
-@DCM-6LD @DCM
+@DCM_6LD @DCM
 Scenario Outline: Sub items checking under -  6 Livers Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -73,7 +73,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
-@DCM-8BHWD @DCM
+@DCM_8BHWD @DCM
 Scenario Outline: Sub items checking under -  8 Boneless Hot Wings Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -88,7 +88,7 @@ Examples:
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
 
-@DCM-9GD @DCM
+@DCM_9GD @DCM
 Scenario Outline: Sub items checking under - 9 Gizzards Dinner 
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"
@@ -102,7 +102,7 @@ Examples:
 |Sauce Extras|extra_bbq,extra_ranch,extra_jalapeno_ranch,extra_honey_mustard,extra_buffalo_sauce,extra_chipotle_ranch,extra_marinara,extra_cocktail_sauce,extra_tartar_sauce,extra_gravy,extra_ketchup|
 |Side Choices (Pick 2)|french_fries,fried_okra,mash_pot_w/_gravy,mash_pot_w/o_gravy,cole_slaw,macaroni_&_cheese,green_beans,mini_poppers_(3),corn_on_cob,cheesesticks_(2),corn_nuggets_(8),fried_pickle_slices_(8),apple_pie,cherry_pie,french_fries_(fam_size),fried_okra_(fam_size),mash_pot_w/_gravy_(fam_size),mash_pot_w/o_gravy_(fam_size),cole_slaw_(fam_size),macaroni_&_cheese_(fam_size),green_beans_(fam_size),mini_poppers_(9),corn_on_cob_(4),cheesesticks_(6),corn_nuggets_(24),fried_pickle_slices_(24)|
 
-@DCM-MLGD @DCM
+@DCM_MLGD @DCM
 Scenario Outline: Sub items checking under - Mixed Livers & Gizzards Dinner
 Given user able to launch browser and select Place of service for "<product category>"
 And I click on "Green" color vehicle model "Truck" with Lane "Lane1"

@@ -106,8 +106,8 @@ public class orderFlowSteps  {
 		obj_dummypage.selectProduct2PieceChickenDinner();
 	}
 	
-	@When("I click Mixed Livers protuct")
-	public void i_click_mixed_livers_products()
+	@When("I click Mixed Livers & Gizzards Combo")
+	public void i_click_mixed_livers_gizzards_combo()
 	{
 		obj_dummypage.selectProductMixedLiversCombo();
 	}
@@ -124,6 +124,23 @@ public class orderFlowSteps  {
 	{
 		obj_dummypage.selectProduct9Gizzards();
 	}
+	
+
+	@When("I click the product 1 Piece Chicken Snack Pack in Express Extras")
+	public void i_click_the_product_1_piece_chicken_snack_pack_in_express_extras()
+	{
+	
+		obj_dummypage.OnePieceChickenSnackPack();
+	}
+	
+	@When("I click the product 8 Piece Boneless Hot Wings in Express Extras")
+	public void i_click_the_product_8_piece_boneless_hot_wings_in_express_extras()
+	{
+	
+		obj_dummypage.EightPieceBonelessHotWings();
+		
+	}
+	
 	
 	@When("I click the product Kids Meal")
 	public void i_click_the_product_kids_meal()
