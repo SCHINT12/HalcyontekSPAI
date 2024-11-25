@@ -20,7 +20,7 @@ public class test123 {
 		
 		driver.findElement(By.xpath("(//*[@data-id='60001.021124']/following::div/div/div/span)[1]")).click();
 		
-
+	
 	}
 
 }
