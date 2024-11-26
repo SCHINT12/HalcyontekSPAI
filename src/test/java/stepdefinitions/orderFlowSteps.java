@@ -148,6 +148,37 @@ public class orderFlowSteps  {
 		obj_dummypage.SelectKidsMeal();
 	}
 
+	@When("I click the product 2 Piece Chicken Combo in Combo Meals")
+	public void i_click_the_product_2_piece_chicken_combo()
+	{
+		obj_dummypage.selectProduct2PieceChickenCombo();
+	}
+
+@When("I click the product 20 Express Tenders Family Meal in Family Meals")
+	public void i_click_the_product_20_express_tenders_family_meal()
+	{
+		obj_dummypage.selectProduct20ExpressTendersFamilyMeal();
+	}
+
+
+@When("I click the product 3 Fillets Dinner in Fried Fish Fillets")
+	public void i_click_the_product_3_fillets_dinner()
+	{
+		obj_dummypage.selectProduct3FilletsDinner();
+	}
+
+
+@When("I click the product 3 Express Fish Fillets in Fried Fish Fillets")
+	public void i_click_the_product_3_express_fish_fillets()
+	{
+		obj_dummypage.selectProduct3ExpressFishFillets();
+	}
+
+	
+	
+	
+	
+	
 	@Then("validate prices for products {string} for {string}")
 	public void validate_prices(String products,String Section) throws InterruptedException {
 		String allproducts=products;

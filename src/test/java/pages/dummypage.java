@@ -119,6 +119,39 @@ WebDriver driver;
 		
 	}
 	
+	public void  selectProduct2PieceChickenCombo()
+	{
+	
+		WebElement NineGizzards=driver.findElement(By.xpath("//*[text()='2 Piece Chicken Combo']"));
+		NineGizzards.click();
+		
+	}
+	
+	public void  selectProduct20ExpressTendersFamilyMeal()
+	{
+	
+		WebElement NineGizzards=driver.findElement(By.xpath("//*[text()='20 Express Tenders Family Meal']"));
+		NineGizzards.click();
+		
+	}
+	
+	public void  selectProduct3FilletsDinner()
+	{
+	
+		WebElement NineGizzards=driver.findElement(By.xpath("//*[text()='3 Fillets Dinner']"));
+		NineGizzards.click();
+		
+	}
+	
+	public void  selectProduct3ExpressFishFillets()
+	{
+	
+		WebElement NineGizzards=driver.findElement(By.xpath("//*[text()='3 Express Fish Fillets']"));
+		NineGizzards.click();
+		
+	}
+	
+	
 	public void OnePieceChickenSnackPack() {
 		WebElement OnePieceChickenSnackPack=driver.findElement(By.xpath("//*[text()='1 Piece Chicken Snack Pack']"));
 		OnePieceChickenSnackPack.click();	
