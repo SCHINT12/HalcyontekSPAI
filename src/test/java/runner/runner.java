@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features",glue ={"stepdefinitions"},monochrome = true,tags = "@mainPageValidationCE or @KidsMealTest",
+		features = "src/test/java/features",glue ={"stepdefinitions"},monochrome = true,tags = "@CM_4ETC",
 				plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)	
 
@@ -76,7 +76,5 @@ public class runner {
 	//  @FFF_2EFF   :- 2 Express Fish Fillets (Beverages , Sides)
 	//  @FFF_3EFF   :- 3 Express Fish Fillets (Beverages , Sides)
 	//  @FFF_8EFF   :- 8 Express Fish Fillets (Beverages , Sides)
-	
-
 	
 }
