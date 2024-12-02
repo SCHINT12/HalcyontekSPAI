@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features",glue ={"stepdefinitions"},monochrome = true,tags = "@CM_4ETC",
+		features = "src/test/java/features",glue ={"stepdefinitions"},monochrome = true,tags = "@mainPageValidationCE",
 				plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)	
 
